@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: grey;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust the height as needed */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 50px; /* Adjust the height of the logo as needed */
+    width: auto;
+}
+
+#starwars {
+    margin-top: 70px; /* Add a margin to avoid content being hidden behind the fixed header */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    flex-wrap: wrap; /* Allow wrapping to the next line if there are many images */
+}
+
+ul {
+    padding: 0;
+    display: flex; /* Use flexbox for the ul */
+    justify-content: center; /* Center the list items horizontally */
+    flex-wrap: wrap; /* Allow wrapping to the next line if there are many images */
+    list-style-type: none; /* Remove default list styling */
+}
+
+li {
+    color: grey;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    margin: 10px; /* Add space between items */
+    display: flex;
+    flex-direction: column; /* Ensure content inside li is stacked vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+li img {
+    display: block;
+    width: 100px; /* Adjust the width of the image as needed */
+    height: auto;
+    border: 2px solid black;
+}
+
+li span {
+    position: absolute;
+    bottom: 10px; /* Adjust the positioning as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px; /* Adjust the font size as needed */
+}
